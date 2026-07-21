@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+
+<style>
+body{
+    background:#f8f9fc;
+}
+
+.terms-section{
+    padding:70px 0;
+}
+
+.terms-card{
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    padding:50px;
+}
+
+.page-title{
+    font-size:34px;
+    font-weight:700;
+    color:#2d3748;
+    margin-bottom:10px;
+}
+
+.page-title i{
+    color:#667eea;
+    margin-right:10px;
+}
+
+.last-updated{
+    color:#6b7280;
+    margin-bottom:40px;
+}
+
+.term-box{
+    background:#f8f9ff;
+    border-left:5px solid #667eea;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:25px;
+}
+
+.term-box h4{
+    font-size:20px;
+    color:#2d3748;
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+.term-box p,
+.term-box li{
+    color:#6b7280;
+    line-height:1.8;
+}
+
+.term-box ul{
+    padding-left:20px;
+}
+
+.notice-box{
+    margin-top:40px;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    padding:25px;
+    border-radius:15px;
+}
+
+.notice-box h5{
+    font-weight:600;
+}
+
+.notice-box p{
+    margin-bottom:0;
+}
+
+@media(max-width:768px){
+
+.terms-card{
+padding:30px;
+}
+
+.page-title{
+font-size:28px;
+}
+
+}
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<section class="terms-section">
+
+<div class="container">
+
+<div class="terms-card">
+
+<h2 class="page-title">
+<i class="fas fa-file-contract"></i>
+Terms & Conditions
+</h2>
+
+<p class="last-updated">
+Last Updated: July 2026
+</p>
+
+<div class="term-box">
+<h4>1. Acceptance of Terms</h4>
+
+<p>
+By accessing or using Digital Twin AI, you agree to comply with these Terms and Conditions. If you do not agree, please discontinue use of the platform.
+</p>
+
+</div>
+
+<div class="term-box">
+<h4>2. User Responsibilities</h4>
+
+<ul>
+<li>Provide accurate information.</li>
+<li>Maintain the confidentiality of your account.</li>
+<li>Use the platform responsibly.</li>
+<li>Do not misuse or attempt to disrupt our services.</li>
+</ul>
+
+</div>
+
+<div class="term-box">
+<h4>3. AI Recommendations</h4>
+
+<p>
+Our AI-generated simulations and recommendations are intended for informational purposes only and should not be considered professional financial, medical, or legal advice.
+</p>
+
+</div>
+
+<div class="term-box">
+<h4>4. Intellectual Property</h4>
+
+<p>
+All content, software, graphics, branding, and intellectual property associated with Digital Twin AI remain the exclusive property of Digital Twin AI.
+</p>
+
+</div>
+
+<div class="term-box">
+<h4>5. Limitation of Liability</h4>
+
+<p>
+Digital Twin AI is not liable for any direct or indirect damages arising from the use or inability to use our platform or its recommendations.
+</p>
+
+</div>
+
+<div class="term-box">
+<h4>6. Changes to Terms</h4>
+
+<p>
+We reserve the right to update these Terms and Conditions at any time. Continued use of the platform constitutes acceptance of any changes.
+</p>
+
+</div>
+
+<div class="notice-box">
+
+<h5>
+<i class="fas fa-info-circle"></i>
+Questions?
+</h5>
+
+<p>
+If you have any questions regarding these Terms & Conditions, please contact us at <strong>support@digitaltwinai.com</strong>.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}
