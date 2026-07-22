@@ -1,0 +1,317 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+
+<style>
+body{
+    background:#f8f9fc;
+}
+
+.contact-section{
+    padding:70px 0;
+}
+
+.contact-card{
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 12px 40px rgba(0,0,0,.08);
+    overflow:hidden;
+}
+
+.left-side{
+    padding:45px;
+}
+
+.right-side{
+    background:#fafaff;
+    padding:45px;
+    border-left:1px solid #ececec;
+}
+
+.section-title{
+    font-size:32px;
+    font-weight:700;
+    color:#2d3748;
+}
+
+.section-title i{
+    color:#667eea;
+    margin-right:10px;
+}
+
+.section-subtitle{
+    color:#6b7280;
+    margin-bottom:35px;
+}
+
+.form-label{
+    font-weight:600;
+    color:#374151;
+}
+
+.form-control{
+    border-radius:12px;
+    padding:13px;
+    border:1px solid #e5e7eb;
+    transition:.3s;
+}
+
+.form-control:focus{
+    border-color:#667eea;
+    box-shadow:0 0 0 .2rem rgba(102,126,234,.15);
+}
+
+textarea{
+    resize:none;
+}
+
+.send-btn{
+    width:100%;
+    border:none;
+    color:white;
+    padding:14px;
+    border-radius:50px;
+    margin-top:20px;
+    font-weight:600;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    transition:.3s;
+}
+
+.send-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(102,126,234,.35);
+}
+
+.contact-heading{
+    font-size:26px;
+    font-weight:700;
+    color:#2d3748;
+    margin-bottom:10px;
+}
+
+.contact-text{
+    color:#6b7280;
+    margin-bottom:35px;
+}
+
+.info-item{
+    display:flex;
+    margin-bottom:25px;
+}
+
+.info-icon{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:rgba(102,126,234,.12);
+    color:#667eea;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:15px;
+    flex-shrink:0;
+}
+
+.info-title{
+    font-weight:600;
+    color:#2d3748;
+}
+
+.info-desc{
+    color:#6b7280;
+    font-size:15px;
+}
+
+.social-icons{
+    margin-top:40px;
+}
+
+.social-icons a{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    background:#667eea;
+    color:white;
+    margin-right:10px;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.social-icons a:hover{
+    transform:translateY(-3px);
+    background:#764ba2;
+}
+
+@media(max-width:992px){
+
+.right-side{
+border-left:none;
+border-top:1px solid #ececec;
+}
+
+.left-side,
+.right-side{
+padding:35px;
+}
+
+}
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<section class="contact-section">
+
+<div class="container">
+
+<div class="contact-card">
+
+<div class="row g-0">
+
+<!-- LEFT -->
+
+<div class="col-lg-7">
+
+<div class="left-side">
+
+<h2 class="section-title">
+<i class="fas fa-envelope"></i>
+Get in Touch
+</h2>
+
+<p class="section-subtitle">
+Have a question, suggestion, or feedback? We'd love to hear from you.
+</p>
+
+<form>
+
+<div class="mb-3">
+<label class="form-label">Full Name</label>
+<input type="text" class="form-control" placeholder="Your name">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email Address</label>
+<input type="email" class="form-control" placeholder="you@example.com">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Subject</label>
+<input type="text" class="form-control" placeholder="What's this about?">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Message</label>
+<textarea rows="6" class="form-control" placeholder="Write your message here..."></textarea>
+</div>
+
+<button class="send-btn">
+<i class="fas fa-paper-plane"></i>
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="col-lg-5">
+
+<div class="right-side">
+
+<h3 class="contact-heading">
+Contact Information
+</h3>
+
+<p class="contact-text">
+We usually respond within 24 hours.
+</p>
+
+<div class="info-item">
+
+<div class="info-icon">
+<i class="fas fa-envelope"></i>
+</div>
+
+<div>
+<div class="info-title">Email</div>
+<div class="info-desc">support@digitaltwin.ai</div>
+</div>
+
+</div>
+
+<div class="info-item">
+
+<div class="info-icon">
+<i class="fas fa-phone"></i>
+</div>
+
+<div>
+<div class="info-title">Phone</div>
+<div class="info-desc">+91 98765 43210</div>
+</div>
+
+</div>
+
+<div class="info-item">
+
+<div class="info-icon">
+<i class="fas fa-building"></i>
+</div>
+
+<div>
+<div class="info-title">Office</div>
+<div class="info-desc">
+Digital Twin AI Inc.<br>
+Tamil Nadu, India
+</div>
+</div>
+
+</div>
+
+<div class="info-item">
+
+<div class="info-icon">
+<i class="fas fa-clock"></i>
+</div>
+
+<div>
+<div class="info-title">Working Hours</div>
+<div class="info-desc">
+Mon–Fri<br>
+9:00 AM – 6:00 PM IST
+</div>
+</div>
+
+</div>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-twitter"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}
